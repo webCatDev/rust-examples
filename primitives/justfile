@@ -1,0 +1,12 @@
+build:
+   rustc numeric-types.rs
+   rustc deneme.rs
+
+run:
+   @echo "running numeric types..."
+   @./numeric-types
+
+   @echo -e "\n"
+   @echo "running deneme"
+   @./deneme
+
