@@ -13,7 +13,9 @@ fn main() {
     // hex
     let c: u64 = 0xF5A;
 
-    println!("a = {a} #default u32 type inference");
-    println!("b = {b} #decimal");
-    println!("c = {c} #hex")
+    println!("a = {a} \t = 32      #default i32 type inference");
+    println!("b = {b} \t = 43u32   #decimal");
+    println!("c = {c} = 0xF5A   #hex");
+    println!("d = {d} \t = 0b111   #binary", d = 0b111);
+    println!("e = {e} \t = b'A'    #byte", e = b'A');
 }

@@ -1,12 +1,17 @@
 build:
-   rustc numeric-types.rs
-   rustc deneme.rs
+   #! /usr/bin/bash
+   start=$(date +%s) 
+   echo "building..."             
+   rustc numeric-types.rs 
+   end=$(date +%s) 
+   echo -e "Time elapsed: $((($end - $start) / 1000000))s\n" 
 
-run:
+run: build
    @echo "running numeric types..."
    @./numeric-types
 
-   @echo -e "\n"
-   @echo "running deneme"
-   @./deneme
+clean:
+   @echo "cleaning..."
+   rm numeric-types
+
 
